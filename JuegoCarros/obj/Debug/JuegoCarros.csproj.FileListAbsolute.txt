@@ -1,0 +1,27 @@
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\bin\Debug\JuegoCarros.exe.config
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\bin\Debug\JuegoCarros.exe
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\bin\Debug\JuegoCarros.pdb
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.csprojAssemblyReference.cache
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.Form1.resources
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.Properties.Resources.resources
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.csproj.GenerateResource.cache
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.csproj.CoreCompileInputs.cache
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.exe
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.pdb
+C:\Users\ILeon\source\repos\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.Form2.resources
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\bin\Debug\JuegoCarros.exe.config
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\bin\Debug\JuegoCarros.exe
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\bin\Debug\JuegoCarros.pdb
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.csprojAssemblyReference.cache
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.Form1.resources
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.Form2.resources
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.Properties.Resources.resources
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.csproj.GenerateResource.cache
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.csproj.CoreCompileInputs.cache
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.exe
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.pdb
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\bin\Debug\Interop.WMPLib.dll
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\bin\Debug\AxInterop.WMPLib.dll
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\Interop.WMPLib.dll
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\AxInterop.WMPLib.dll
+D:\Universidad\Semestres\Quinto Semestre II\HVP\2do corte\JuegoCarros\JuegoCarros\obj\Debug\JuegoCarros.csproj.ResolveComReference.cache
