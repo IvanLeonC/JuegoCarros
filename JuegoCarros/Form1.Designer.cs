@@ -46,6 +46,7 @@
             this.nivel_text = new System.Windows.Forms.Label();
             this.gana_txt = new System.Windows.Forms.Label();
             this.MENU = new System.Windows.Forms.GroupBox();
+            this.lbGasolina = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -56,6 +57,10 @@
             this.nuevo_txt = new System.Windows.Forms.Label();
             this.nivel2_txt = new System.Windows.Forms.Label();
             this.nivel3_txt = new System.Windows.Forms.Label();
+            this.gasolina = new System.Windows.Forms.Timer(this.components);
+            this.nivel_gasolina = new System.Windows.Forms.PictureBox();
+            this.carJugadorArriba = new System.Windows.Forms.Timer(this.components);
+            this.carJugadorAbajo = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Carro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coche2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coche1)).BeginInit();
@@ -66,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nivel_gasolina)).BeginInit();
             this.SuspendLayout();
             // 
             // TimerMover
@@ -207,15 +213,27 @@
             // 
             // MENU
             // 
+            this.MENU.Controls.Add(this.lbGasolina);
             this.MENU.Controls.Add(this.score_text);
             this.MENU.Controls.Add(this.Velocidad_text);
             this.MENU.Controls.Add(this.nivel_text);
             this.MENU.Location = new System.Drawing.Point(423, 399);
             this.MENU.Name = "MENU";
-            this.MENU.Size = new System.Drawing.Size(165, 134);
+            this.MENU.Size = new System.Drawing.Size(165, 162);
             this.MENU.TabIndex = 10;
             this.MENU.TabStop = false;
             this.MENU.Text = "MENU";
+            // 
+            // lbGasolina
+            // 
+            this.lbGasolina.AutoSize = true;
+            this.lbGasolina.BackColor = System.Drawing.Color.White;
+            this.lbGasolina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGasolina.Location = new System.Drawing.Point(22, 125);
+            this.lbGasolina.Name = "lbGasolina";
+            this.lbGasolina.Size = new System.Drawing.Size(110, 20);
+            this.lbGasolina.TabIndex = 8;
+            this.lbGasolina.Text = "Gasolina: 50";
             // 
             // pictureBox3
             // 
@@ -331,12 +349,40 @@
             this.nivel3_txt.Text = "Nivel 3";
             this.nivel3_txt.Visible = false;
             // 
+            // gasolina
+            // 
+            this.gasolina.Enabled = true;
+            this.gasolina.Interval = 2000;
+            this.gasolina.Tick += new System.EventHandler(this.gasolina_Tick);
+            // 
+            // nivel_gasolina
+            // 
+            this.nivel_gasolina.BackColor = System.Drawing.Color.Transparent;
+            this.nivel_gasolina.Image = ((System.Drawing.Image)(resources.GetObject("nivel_gasolina.Image")));
+            this.nivel_gasolina.Location = new System.Drawing.Point(271, 492);
+            this.nivel_gasolina.Name = "nivel_gasolina";
+            this.nivel_gasolina.Size = new System.Drawing.Size(56, 69);
+            this.nivel_gasolina.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.nivel_gasolina.TabIndex = 17;
+            this.nivel_gasolina.TabStop = false;
+            // 
+            // carJugadorArriba
+            // 
+            this.carJugadorArriba.Interval = 10;
+            this.carJugadorArriba.Tick += new System.EventHandler(this.carJugadorArriba_Tick);
+            // 
+            // carJugadorAbajo
+            // 
+            this.carJugadorAbajo.Interval = 10;
+            this.carJugadorAbajo.Tick += new System.EventHandler(this.carJugadorAbajo_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(600, 600);
+            this.Controls.Add(this.nivel_gasolina);
             this.Controls.Add(this.nivel3_txt);
             this.Controls.Add(this.nivel2_txt);
             this.Controls.Add(this.nuevo_txt);
@@ -373,6 +419,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nivel_gasolina)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,6 +452,11 @@
         private System.Windows.Forms.Label nuevo_txt;
         private System.Windows.Forms.Label nivel2_txt;
         private System.Windows.Forms.Label nivel3_txt;
+        private System.Windows.Forms.Timer gasolina;
+        private System.Windows.Forms.Label lbGasolina;
+        private System.Windows.Forms.PictureBox nivel_gasolina;
+        private System.Windows.Forms.Timer carJugadorArriba;
+        private System.Windows.Forms.Timer carJugadorAbajo;
     }
 }
 

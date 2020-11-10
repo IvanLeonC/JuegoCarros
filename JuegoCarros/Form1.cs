@@ -18,6 +18,7 @@ namespace JuegoCarros
     {
         int score = 0;
         int velocidad = 2;
+        int tiempo = 50;
 
         SoundPlayer sonido;
         
@@ -107,9 +108,26 @@ namespace JuegoCarros
             {
                 gameOver();
             }
+            if (Carro.Bounds.IntersectsWith(nivel_gasolina.Bounds))
+            {
+                nivel_gasolina.Location = new Point(8, 400);
+                tiempo += 50;
+            }
             
+
             void gameOver()
             {
+                if(tiempo < 0) //PIERDE POR NO TENER NITRO
+                {
+                    btnNuevo.Visible = true;
+                    btnSalir.Visible = true;
+                    Fin_text.Visible = true;
+                    TimerMover.Stop();
+                    coche1_mover.Stop();
+                    coche2_mover.Stop();
+                    coche3_mover.Stop();
+
+                }
                 btnNuevo.Visible = true;
                 btnSalir.Visible = true;
                 Fin_text.Visible = true;
@@ -145,6 +163,15 @@ namespace JuegoCarros
             {
                 carJugadorIzq.Start();
             }
+            if(e.KeyCode == Keys.Up)
+            {
+                carJugadorArriba.Start();
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                carJugadorAbajo.Start();
+            }
+
         }
 
         private void carJugadorDer_Tick(object sender, EventArgs e)
@@ -167,6 +194,9 @@ namespace JuegoCarros
         {
             carJugadorDer.Stop();
             carJugadorIzq.Stop();
+            carJugadorArriba.Stop();
+            carJugadorAbajo.Stop();
+
         }
 
         private void coche1_mover_Tick(object sender, EventArgs e)
@@ -224,6 +254,27 @@ namespace JuegoCarros
             }
         }
 
-      
+        private void gasolina_Tick(object sender, EventArgs e)
+        {
+            lbGasolina.Text = "gasolina="+tiempo;
+            tiempo -= 1;
+            
+        }
+
+        private void carJugadorArriba_Tick(object sender, EventArgs e)
+        {
+            if (Carro.Location.Y > 5)
+            {
+                Carro.Top -= 5;
+            }
+        }
+
+        private void carJugadorAbajo_Tick(object sender, EventArgs e)
+        {
+            if (Carro.Location.Y > 5)
+            {
+                Carro.Top += 5;
+            }
+        }
     }
 }
