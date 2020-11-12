@@ -20,6 +20,8 @@ namespace JuegoCarros
         int velocidad = 2;
         int tiempo = 50;
 
+        Random  aleatorio = new Random();
+
         SoundPlayer sonido;
         
         //ESTA ES UNA PRUEBA DE GIT
@@ -110,7 +112,7 @@ namespace JuegoCarros
             }
             if (Carro.Bounds.IntersectsWith(nivel_gasolina.Bounds))
             {
-                nivel_gasolina.Location = new Point(8, 400);
+                nivel_gasolina.Location = new Point(aleatorio.Next(350), aleatorio.Next(500));
                 tiempo += 50;
             }
             
